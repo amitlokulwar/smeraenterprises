@@ -1,0 +1,136 @@
+/*
+Theme Name: Real Estate Theme
+Theme URI: http://www.neosofttech.com/
+Description: A clean and minimal theme that is completely compatible with WordPress 4.x
+Author: Neosoft Technologies
+Author URI: http://www.neosofttech.com/
+Version: 1.0
+*/
+
+/*-------------------------------------------------------
+[Table of contents]
+
+1. Reset
+    
+2. Generic
+
+3. Typography
+
+4. Form
+
+5. Menu
+
+6. Layout
+        
+--------------------------------------------------------*/
+
+
+/*-------------------------------------------------------
+  #Reset Styles
+ -------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+*{margin:0; padding:0; outline: 0 none; border: 0 none;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+:focus { outline:0; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+}
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+caption, th, td {
+        text-align:left;
+        font-weight:400;
+}
+audio, canvas, img, video { vertical-align: middle; }
+fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+}
+/* WebKit browsers */
+*::-webkit-input-placeholder {
+color:#2f2f2f;
+opacity:1;
+}
+*:-moz-placeholder {
+ /* FF 4-18 */
+color:#2f2f2f;
+opacity:1;
+}
+*::-moz-placeholder {
+/* FF 19+ */
+color:#2f2f2f;
+opacity:1;
+}
+*:-ms-input-placeholder {
+ /* IE 10+ */
+color:#2f2f2f;
+opacity:1;
+}
+ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+color:transparent;
+}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+color:transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+color:transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+color:transparent;
+} /* IE 10+ */
+
+.wpcf7-submit{
+border: 2px solid #f7b70b;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    width: 30%;
+    padding: 8px;
+}
+
+.wpcf7-submit::before {
+    border: 2px solid #f7b70b;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    width: 30%;
+    padding: 8px;
+}
+.wpcf7-submit:hover::before {
+    opacity: 1;
+}
+.wpcf7-submit::before {
+    border: 4px solid white;
+    bottom: 4px;
+    content: "";
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
